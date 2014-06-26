@@ -1,0 +1,9 @@
+<ion-view title="Blogs">
+  <ion-content class="has-header">
+  	<ion-list>
+	    <ion-item ng-repeat="blog in blogs" type="item-text-wrap" href="#/tab/article/{{blog.id}}">
+	    	<h1>{{blog.title}}</h1>
+	    </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

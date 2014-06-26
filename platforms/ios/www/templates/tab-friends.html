@@ -1,0 +1,10 @@
+<ion-view title="Friends">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="image in images" type="item-text-wrap">
+        <h1>{{image.name}}</h1>
+        <img src="{{image.img}}" alt="">
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
