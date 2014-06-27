@@ -100,6 +100,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.product', {
+      url: '/product/:productId',
+      views: {
+        'tab-products': {
+          templateUrl: 'templates/product.html',
+          controller: 'ProductCtrl'
+        }
+      }
+    })
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 

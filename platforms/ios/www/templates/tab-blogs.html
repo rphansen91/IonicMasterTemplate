@@ -2,7 +2,7 @@
   <ion-content class="has-header">
   	<ion-list>
 	    <ion-item ng-repeat="blog in blogs" type="item-text-wrap" href="#/tab/article/{{blog.id}}">
-	    	<h1>{{blog.title}}</h1>
+	    	<img src="{{blog.summary_html}}" alt="" class="width20">{{blog.title}}
 	    </ion-item>
     </ion-list>
   </ion-content>

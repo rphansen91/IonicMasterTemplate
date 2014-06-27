@@ -25,7 +25,6 @@ angular.module('starter.controllers', [])
 	var path = 'blogs/5409591/articles/' +  $stateParams.articleId + '.json';
 	Blog(path).then(function (result) {
 		$scope.article = result.article;
-		console.log(result);
 	})
 })
 
@@ -34,7 +33,15 @@ angular.module('starter.controllers', [])
 	var path = 'products.json';
 	Blog(path).then(function (result) {
 		$scope.products = result.products;
-		console.log(result);
 	})
 	
+})
+
+.controller('ProductCtrl', function($scope, $stateParams, Blog) {
+	$scope.product = {};
+	var path = 'products/' +  $stateParams.productId + '.json';
+	Blog(path).then(function (result) {
+		$scope.product = result.product;
+		console.log(result);
+	})
 });
