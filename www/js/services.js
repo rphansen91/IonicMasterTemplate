@@ -25,6 +25,17 @@ angular.module('starter.services', [])
   }
 })
 
+.factory('Slider', function () {
+  var images = [
+    { id: 0, img: 'http://cdn29.elitedaily.com/wp-content/uploads/2014/01/richard-sherman-elite-daily1.jpg' },
+    { id: 1, img: 'http://l3.yimg.com/bt/api/res/1.2/q5_DIcNLvFn6aAxkxMltmA--/YXBwaWQ9eW5ld3M7cT04NTt3PTYwMA--/http://media.zenfs.com/en/blogs/sptusmmaexperts/richard-sherman-s-trash-talk-1090514-TwoByOne.jpg' },
+    { id: 2, img: 'http://atlantablackstar.com/wp-content/uploads/2014/02/RICHARD-SHERMAN-post-game-600x300.jpg' }
+  ];
+  return function () {
+      return images;
+  }
+})
+
 .factory('Media', function () {
   var images = [
     { id: 0, name: 'Erin Andrews', img: 'http://blacksportsonline.com/home/wp-content/uploads/2014/01/Erin-Andrews-Richard-Sherman.jpg' },

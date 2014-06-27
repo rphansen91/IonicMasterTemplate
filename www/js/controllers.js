@@ -1,6 +1,7 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', function($scope, Slider) {
+	$scope.images = Slider();
 })
 
 .controller('FriendsCtrl', function($scope, Friends, Media) {
